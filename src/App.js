@@ -6,8 +6,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      baseURL: 'https://unpkg.com/uswds@1.0.0/dist/',
-      assetURL: 'https://federalist.fr.cloud.gov/preview/18f/web-design-standards/feature-event-delegation/',
       items: [
         {title: 'Section one', text: 'This is the first section.'},
       ],
