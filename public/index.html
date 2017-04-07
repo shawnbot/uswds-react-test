@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/feature-event-delegation/css/uswds.min.css">
+    <title>USWDS + React</title>
+  </head>
+  <body>
+    <a class="usa-skipnav" href="#main-content">Skip to main content</a>
+
+    <header class="usa-header usa-header-extended" role="banner">
+      <!-- Gov banner BEGIN -->
+      <div class="usa-banner">
+        <div class="usa-accordion">
+          <header class="usa-banner-header">
+            <div class="usa-grid usa-banner-inner">
+            <img src="https://unpkg.com/uswds@1.0.0/dist/img/favicons/favicon-57.png" alt="U.S. flag">
+            <p>An official website of the United States government</p>
+            <button class="usa-accordion-button usa-banner-button" aria-expanded="false" aria-controls="gov-banner">
+              <span class="usa-banner-button-text">Here's how you know</span>
+            </button>
+            </div>
+          </header>
+          <div class="usa-banner-content usa-grid usa-accordion-content" id="gov-banner" aria-hidden="true">
+            <div class="usa-banner-guidance-gov usa-width-one-half">
+              <img class="usa-banner-icon usa-media_block-img" src="https://unpkg.com/uswds@1.0.0/dist/img/icon-dot-gov.svg" alt="Dot gov">
+              <div class="usa-media_block-body">
+                <p>
+                  <strong>The .gov means it’s official.</strong>
+                  <br>
+                  Federal government websites always use a .gov or .mil domain. Before sharing sensitive information online, make sure you’re on a .gov or .mil site by inspecting your browser’s address (or “location”) bar.
+                </p>
+              </div>
+            </div>
+            <div class="usa-banner-guidance-ssl usa-width-one-half">
+              <img class="usa-banner-icon usa-media_block-img" src="https://unpkg.com/uswds@1.0.0/dist/img/icon-https.svg" alt="SSL">
+              <div class="usa-media_block-body">
+                <p>This site is also protected by an SSL (Secure Sockets Layer) certificate that’s been signed by the U.S. government. The <strong>https://</strong> means all transmitted data is encrypted &nbsp;— in other words, any information or browsing history that you provide is transmitted securely.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Gov banner END -->
+      <div class="usa-navbar">
+        <button class="usa-menu-btn">Menu</button>
+        <div class="usa-logo" id="logo">
+          <em class="usa-logo-text">
+            <a href="https://standards.usa.gov/" title="Home" aria-label="Home">
+              U.S. Web Design Standards
+            </a>
+          </em>
+        </div>
+      </div>
+      <nav role="navigation" class="usa-nav">
+        <div class="usa-nav-inner">
+          <button class="usa-nav-close">
+            <img src="https://unpkg.com/uswds@1.0.0/dist/img/close.svg" alt="close">
+          </button>
+          <ul class="usa-nav-primary usa-accordion">
+            <li>
+              <button class="
+              usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="side-nav-1">
+                <span>Section title</span>
+              </button>
+              <ul id="side-nav-1" class="usa-nav-submenu" aria-hidden="true">
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-2">
+                <span>Simple terms</span>
+              </button>
+              <ul id="sidenav-2" class="usa-nav-submenu" aria-hidden="true">
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="usa-nav-link" href="#">
+                <span>This is a link</span>
+              </a>
+            </li>
+            <li>
+              <button class="usa-accordion-button usa-nav-link" aria-expanded="false" aria-controls="sidenav-3">
+                <span>This is a menu again</span>
+              </button>
+              <ul id="sidenav-3" class="usa-nav-submenu" aria-hidden="true">
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+                <li>
+                  <a href="#">Page title</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="usa-nav-secondary">
+            <form class="usa-search usa-search-small js-search-form usa-sr-only">
+              <div role="search">
+                <label class="usa-sr-only" for="search-field-small">Search small</label>
+                <input id="search-field-small" type="search" name="search">
+                <button type="submit">
+                  <span class="usa-sr-only">Search</span>
+                </button>
+              </div>
+            </form>
+            <ul class="usa-unstyled-list usa-nav-secondary-links">
+              <li class="js-search-button-container">
+                <button class="usa-header-search-button js-search-button">Search</button>
+              </li>
+              <li>
+                <a href="#">Secondary link</a>
+              </li>
+              <li>
+                <a href="#">And another</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="usa-overlay"></div>
+    </header>
+
+    <div class="usa-grid" style="margin-top: 4em;">
+      <h1>
+        Standards + React
+      </h1>
+      <div class="usa-width-one-half">
+        <p class="usa-font-lead">
+          This entire page is a test of <a
+            href="https://github.com/18F/web-design-standards/pull/1836">event
+            delegation</a> to solve the <a
+            href="https://github.com/18F/web-design-standards/issues/1423">problem</a>
+          of integrating the Standards' interactive components with <a
+            href="https://facebook.github.io/react/">React</a>. This is what
+          you should be able to do here:
+        </p>
+
+        <ul>
+
+          <li><strong>Click the "Here's how you know" button</strong>  at the
+            very top of the page, and it should expand to reveal more content
+            below. Clicking it again should close it.</li>
+
+          <li><strong>Click the Search "link" in the header</strong>, and the
+            actual search form should appear, then focus. Click anywhere
+            outside of the search form, and it should return to showing the
+            link-like button.</li>
+
+          <li><strong>Click the navigation dropdowns in the header</strong>,
+            and they should collapse (then expand again) on subsequent clicks.
+            No more than one should be expanded at the same time.</li>
+
+          <li><strong>Shrink your window or view on a mobile device</strong>,
+            click the "Menu" button at the top right to open the navigation
+            mobile menu. The close button should get focus, and clicking on it
+            or the page overlay should dismiss the navigation.</li>
+
+        </ul>
+      </div>
+      <div class="usa-width-one-half">
+        <h3>React-friendly accordions</h3>
+
+        <ul>
+          <li><strong>Open the accordion below</strong>, then click "Add
+            an item" to re-render the app with an additional accordion section.
+            Section should remain open whenever you add an item unless you
+            close it again.</li>
+
+          <li><strong>Click "Start over" to return to the initial state</strong>,
+            in which the first accordion should remain open.</li>
+        </ul>
+
+        <div id="root">
+          <!-- this is where the React app is mounted -->
+        </div>
+
+        <p><span class="usa-label">Bonus</span> The above accordion also has
+          <tt>aria-multiselectable="true"</tt>, which allows accordions to have
+          multiple sections open at once.</p>
+
+        <h3>Nested accordions</h3>
+        <p>Accordions within accordions should be possible now!</p>
+
+        <ul class="usa-accordion usa-accordion-bordered">
+          <li>
+            <button class="usa-accordion-button" aria-expanded="false"
+              aria-controls="accordion1">
+              Parent 1
+            </button>
+            <div class="usa-accordion-content" id="accordion1">
+              <p>This the first accordion's content.</p>
+
+              <ul class="usa-accordion usa-accordion-bordered">
+                <li>
+                  <button class="usa-accordion-button" aria-expanded="false"
+                    aria-controls="accordion1-1">
+                    Child 1
+                  </button>
+                  <div class="usa-accordion-content" id="accordion1-1">
+                    <p>This the first inner accordion's content.</p>
+                  </div>
+                </li>
+                <li>
+                  <button class="usa-accordion-button" aria-expanded="false"
+                    aria-controls="accordion1-2">
+                    Child 2
+                  </button>
+                  <div class="usa-accordion-content" id="accordion1-2">
+                    <p>This the second inner accordion's content.</p>
+                  </div>
+                </li>
+              </ul>
+
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://federalist.fr.cloud.gov/preview/18f/web-design-standards/feature-event-delegation/js/uswds.min.js"></script>
+  </body>
+</html>
