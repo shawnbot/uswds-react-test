@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-
 import Wrapper from './Wrapper';
+
+import 'uswds';
+import 'uswds/dist/css/uswds.css';
 
 class App extends Component {
   constructor(props) {
